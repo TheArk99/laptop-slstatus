@@ -72,5 +72,5 @@ static const struct arg args[] = {
   {wifi_perc, "[: %s%% ", "wlp6s0"  },
   {netspeed_rx, "|  %s ", "wlp6s0"  },
   {netspeed_tx, "|  %s]  ", "wlp6s0"  },
-  {datetime, "%s",           "%a %b %d %r " },
+  {datetime, "%s",           "%a %b %d %r" },
 };
