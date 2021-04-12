@@ -40,7 +40,19 @@
 			return NULL;
 		}
 
-		return bprintf("%d", perc);
+    if (perc == 100) {
+      return bprintf(" %d", perc);
+    }
+    if (perc <= 99 && perc >= 51) {
+      return bprintf(" %d", perc);
+    }
+    if (perc <= 50 && perc >= 25) {
+      return bprintf(" %d", perc);
+    }
+    else{
+      return bprintf(" %d", perc);
+    }
+		/*return bprintf("%d", perc);*/
 	}
 
 	const char *
@@ -209,8 +221,8 @@
 		if (sysctlbyname("hw.acpi.battery.life", &cap, &len, NULL, 0) == -1
 				|| !len)
 			return NULL;
-
-		return bprintf("%d", cap);
+    
+    return bprintf("%d", cap);
 	}
 
 	const char *

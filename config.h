@@ -67,7 +67,7 @@ static const struct arg args[] = {
 	/* function format          argument */
   {cpu_perc, " [CPU  %s%%]   ", NULL       },
   {ram_used, "[RAM %s]   ", NULL       },
-  {battery_perc, "[ %s%%", "BAT1"    },
+  {battery_perc, "[%s%%", "BAT1"    },
   {battery_remaining, " %s]  ", "BAT1"    }, 
   {wifi_perc, "[: %s%% ", "wlp6s0"  },
   {netspeed_rx, "|  %s ", "wlp6s0"  },
