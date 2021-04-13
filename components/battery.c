@@ -43,14 +43,16 @@
     if (perc == 100) {
       return bprintf(" %d", perc);
     }
-    if (perc <= 99 && perc >= 51) {
+    else if (perc <= 99 && perc >= 65) {
       return bprintf(" %d", perc);
     }
-    if (perc <= 50 && perc >= 25) {
+    else if (perc <= 64 && perc >= 26) {
       return bprintf(" %d", perc);
     }
-    else{
+    else if (perc <= 25 && perc >= 15) {
       return bprintf(" %d", perc);
+    }else{
+      return bprintf(" %d", perc);
     }
 		/*return bprintf("%d", perc);*/
 	}
