@@ -49,7 +49,7 @@
     else if (perc <= 64 && perc >= 26) {
       return bprintf(" %d", perc);
     }
-    else if (perc <= 25 && perc >= 15) {
+    else if (perc <= 25 && perc >= 10) {
       return bprintf(" %d", perc);
     }else{
       return bprintf(" %d", perc);
